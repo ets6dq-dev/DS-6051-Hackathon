@@ -39,14 +39,14 @@ We translate the same essays into Spanish and Mandarin and compare scores agains
 
 ## How It Works
 
-Select essays with human-assigned scores.
-Grade each essay once under a standard prompt (original) using gemma-4-E2B-it, the instruction-tuned model, and separately using gemma-4-E2B, the base model, per the rubric's encouraged base vs. instruction-tuned comparison.
-Create modified versions of each essay: noisy (typos/rewording), sycophancy (pressure statement added), translated_es, and translated_zh.
-Run every version through the instruction-tuned grading model and record its score and justification.
-For Sycophancy and Explainability: run the three judge models against the original essays' justifications only, and compare judge scores for agreement.
-For Attack Success Rate: directly compare original vs. sycophancy scores per essay (no judge involved).
-For Robustness and Cross-Lingual Consistency: directly compare original vs. noisy/translated_es/translated_zh scores per essay.
-For Base vs. Instruction-Tuned: compare score and justification quality between the two models on the same original essays.
+1. Select essays with human-assigned scores.
+2. Grade each essay once under a standard prompt (original) using gemma-4-E2B-it, the instruction-tuned model, and separately using gemma-4-E2B, the base model, per the rubric's encouraged base vs. instruction-tuned comparison.
+3. Create modified versions of each essay: noisy (typos/rewording), sycophancy (pressure statement added), translated_es, and translated_zh.
+4. Run every version through the instruction-tuned grading model and record its score and justification.
+5. For Sycophancy and Explainability: run the three judge models against the original essays' justifications only, and compare judge scores for agreement.
+6. For Attack Success Rate: directly compare original vs. sycophancy scores per essay (no judge involved).
+7. For Robustness and Cross-Lingual Consistency: directly compare original vs. noisy/translated_es/translated_zh scores per essay.
+8. For Base vs. Instruction-Tuned: compare score and justification quality between the two models on the same original essays.
 
 
 ## Models
